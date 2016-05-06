@@ -26,7 +26,6 @@ public class Cursor : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
         bool buttonState = sm.button_states[0];
-        Debug.Log(buttonState + " " + buttonPressed + " " + buttonStateChanged);
 
         if (buttonState != buttonPressed) {
             buttonStateChanged = true;
@@ -47,7 +46,6 @@ public class Cursor : MonoBehaviour {
         }
 
         if (buttonPressed) {
-            Debug.Log("Button pressed");
             grabbedBlock.GetComponent<FalconRigidBody>().MovePosition(godObject.transform.position + diff);
             //grabbedBlock.GetComponent<FalconRigidBody>().refreshShape();
         }

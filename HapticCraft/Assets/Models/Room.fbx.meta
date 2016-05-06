@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: 7013a1482d986744d87977277f989eb8
+timeCreated: 1462530421
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Cabinet1
+    100002: floor
+    100004: Mat
+    100006: Mattress1
+    100008: Mattress2
+    100010: PaperDoor
+    100012: PaperDoorFrame
+    100014: Pillow_down
+    100016: Pillow_up
+    100018: //RootNode
+    100020: Shelf1
+    100022: Table1
+    100024: Walls
+    100026: Window1
+    100028: Window3
+    400000: Cabinet1
+    400002: floor
+    400004: Mat
+    400006: Mattress1
+    400008: Mattress2
+    400010: PaperDoor
+    400012: PaperDoorFrame
+    400014: Pillow_down
+    400016: Pillow_up
+    400018: //RootNode
+    400020: Shelf1
+    400022: Table1
+    400024: Walls
+    400026: Window1
+    400028: Window3
+    2300000: Cabinet1
+    2300002: floor
+    2300004: Mat
+    2300006: Mattress1
+    2300008: Mattress2
+    2300010: PaperDoor
+    2300012: PaperDoorFrame
+    2300014: Pillow_down
+    2300016: Pillow_up
+    2300018: Shelf1
+    2300020: Table1
+    2300022: Walls
+    2300024: Window1
+    2300026: Window3
+    3300000: Cabinet1
+    3300002: floor
+    3300004: Mat
+    3300006: Mattress1
+    3300008: Mattress2
+    3300010: PaperDoor
+    3300012: PaperDoorFrame
+    3300014: Pillow_down
+    3300016: Pillow_up
+    3300018: Shelf1
+    3300020: Table1
+    3300022: Walls
+    3300024: Window1
+    3300026: Window3
+    4300000: Mattress1
+    4300002: Mattress2
+    4300004: Pillow_up
+    4300006: Mat
+    4300008: Pillow_down
+    4300010: floor
+    4300012: Shelf1
+    4300014: Cabinet1
+    4300016: Table1
+    4300018: PaperDoorFrame
+    4300020: Walls
+    4300022: Window1
+    4300024: Window3
+    4300026: PaperDoor
+    9500000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
