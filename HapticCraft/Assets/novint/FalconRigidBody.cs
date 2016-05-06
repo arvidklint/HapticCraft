@@ -10,12 +10,17 @@ public class FalconRigidBody : MonoBehaviour {
 	public Vector3 linearFactors = new Vector3(1.0f,1.0f,1.0f);
 	public Vector3 angularFactors = new Vector3(1.0f,1.0f,1.0f);
 	public float friction = 0.8f;
+
+    Rigidbody rb;
+
+    Vector3 nextPosition = Vector3.zero;
+    Quaternion nextOrient = Quaternion.identity;
 	
 	// Use this for initialization
 	void Start () {
 		bodyId = getNextBodyId();
 	 	refreshShape();
-	 
+        rb = GetComponent<Rigidbody>();
 	}
 	
 	public void refreshShape(){
@@ -52,11 +57,22 @@ public class FalconRigidBody : MonoBehaviour {
 		if(!res){
 //			Debug.Log("Error getting object pose");
 			return;
-		}	
-		transform.localPosition = pos;
-		transform.localRotation = orient;
-		FalconUnity.updateDynamicShape(bodyId, mass, k, linearFactors, angularFactors, friction);
+		}
+
+        //rb.MoveRotation(orient);
+
+        //
+        transform.localPosition = pos + nextPosition;
+        transform.localRotation = orient;
+        nextPosition = Vector3.zero;
+        FalconUnity.updateDynamicShape(bodyId, mass, k, linearFactors, angularFactors, friction);
 	}
+
+    public void MovePosition(Vector3 pos) {
+        transform.localPosition = pos;
+        refreshShape();
+        //nextPosition = pos;
+    }
 	
 	static object Lock = new object();
 	private static int curId = -1;
