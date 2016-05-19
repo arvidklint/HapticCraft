@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Button : MonoBehaviour {
+public class StartButton : MonoBehaviour {
 
     FalconSpringedBody fsb;
     Renderer renderer;
@@ -13,13 +13,14 @@ public class Button : MonoBehaviour {
 
     public WhackAMole whackAMole;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start() {
         renderer = GetComponent<Renderer>();
         fsb = GetComponent<FalconSpringedBody>();
         fsb.springPos = transform.position;
-	}
-	
+        setActive();
+    }
+
     public void setActive() {
         renderer.material = highlight;
         active = true;
@@ -29,18 +30,14 @@ public class Button : MonoBehaviour {
         return active;
     }
 
-    public void Deactivate() {
-        renderer.material = neutral;
-        active = false;
-    }
-
     void OnTriggerEnter(Collider other) {
+        Debug.Log("Collider");
         if (other.gameObject.layer == 9) {
-            if(active) {
-                whackAMole.ButtonPushed();
+            if (active) {
+                renderer.material = neutral;
+                active = false;
+                whackAMole.StartGame();
             }
-            renderer.material = neutral;
-            active = false;
         }
     }
 }
